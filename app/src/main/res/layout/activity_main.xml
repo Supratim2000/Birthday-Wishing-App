@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3d2ff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/welcomeText"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:fontFamily="@string/cursiveFontFamily"
+        android:textColor="@color/deepPink"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="64dp"/>
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nameEnter"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#3f7f35"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cakeImageView"
+        android:fontFamily="@string/casualFontFamily"
+        android:layout_marginTop="62dp"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:hint="@string/editTextHint"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText"
+        app:backgroundTint="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="32dp"
+        android:textStyle="italic"
+        android:fontFamily="@string/sansSrifLightFontFamily"/>
+
+    <Button
+        android:text="@string/buttonText"
+        android:fontFamily="@string/casualFontFamily"
+        android:textStyle="bold"
+        android:background="#FF69B4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+        android:layout_marginTop="32dp"
+        android:onClick="makeCard"/>
+
+    <ImageView
+        android:id="@+id/cakeImageView"
+        android:src="@drawable/birthdaycake"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        android:layout_marginTop="32dp"
+        />
+    
+    <TextView
+        android:text="@string/appCopyright"
+        android:textColor="#a8a8a8"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Birthday App</string>
+    <string name="welcomeText">Welcome to Birthday App</string>
+    <string name="cursiveFontFamily">cursive</string>
+    <string name="nameEnter">Enter your name:</string>
+    <string name="casualFontFamily">casual</string>
+    <string name="editTextHint">name</string>
+    <string name="sansSrifLightFontFamily">sans-serif-light</string>
+    <string name="buttonText">make card</string>
+    <string name="appCopyright">App made by Supratim</string>
+    <string name="birthdayWish">On your birthday may all that you asked from God be granted to you hundred fold! Happy Birthday to my sweetest friend. Always keep smiling the way you do! Have an amazing day and an even more special year ahead. May God Bless you.</string>
+    <string name="tempText">Please wait...</string>
+</resources>
